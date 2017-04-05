@@ -8,6 +8,10 @@ import { routing } from './app.routing';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { AboutComponent } from './about/about.component';
+import { InventionListComponent } from './invention-list/invention-list.component';
+import { ContactComponent } from './contact/contact.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -19,7 +23,11 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    NavbarComponent,
+    AboutComponent,
+    InventionListComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,5 @@
+<ul *ngFor="let invention of inventions | async">
+  <li>{{invention.projectName}}</li>
+  <li>{{invention.creators}}</li>
+  <li>{{invention.description}}</li>
+</ul>
