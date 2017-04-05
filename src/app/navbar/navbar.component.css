@@ -1,6 +1,9 @@
 .navbar {
   background-color: #fc6;
   font-weight: bold;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: -20px;
 }
 
 #logo {

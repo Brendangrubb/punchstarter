@@ -12,6 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
 import { InventionListComponent } from './invention-list/invention-list.component';
 import { ContactComponent } from './contact/contact.component';
+import { NewProjectComponent } from './new-project/new-project.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -27,7 +28,8 @@ export const firebaseConfig = {
     NavbarComponent,
     AboutComponent,
     InventionListComponent,
-    ContactComponent
+    ContactComponent,
+    NewProjectComponent
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { InventionListComponent } from './invention-list/invention-list.component';
+import { NewProjectComponent } from './new-project/new-project.component';
 
 const appRoutes : Routes = [
   {
@@ -18,6 +19,10 @@ const appRoutes : Routes = [
   {
     path: 'invention-list',
     component: InventionListComponent
+  },
+  {
+    path: 'new-project',
+    component: NewProjectComponent
   }
 ];
 
