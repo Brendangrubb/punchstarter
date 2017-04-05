@@ -1,23 +1,23 @@
 import { Component, OnInit } from '@angular/core';
-import { Invention } from '../invention.model';
+import { Project } from '../project.model';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
-import { InventionService } from '../invention.service';
+import { ProjectService } from '../project.service';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-new-project',
   templateUrl: './new-project.component.html',
   styleUrls: ['./new-project.component.css'],
-  providers: [InventionService]
+  providers: [ProjectService]
 })
 export class NewProjectComponent implements OnInit {
 
-  addNewProject(projectName: string, creators: string, description: string, rewards: string, moneyGoal: number, imgurl: string) {
-    var newProject: Invention = new Invention(projectName, creators, description, rewards, moneyGoal, imgurl);
-    this.inventionService.saveInvention(newProject);
+  addNewProject(projectName: string, creators: string, description: string, rewards: string, moneyGoal: number, imgurl: string, category: string) {
+    var newProject: Project = new Project(projectName, creators, description, rewards, moneyGoal, imgurl, category);
+    this.projectService.saveProject(newProject);
   }
 
-  constructor(private inventionService: InventionService) { }
+  constructor(private projectService: ProjectService) { }
 
   ngOnInit() {
   }

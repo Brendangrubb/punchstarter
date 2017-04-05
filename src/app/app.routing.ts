@@ -1,10 +1,10 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { Invention } from './invention.model';
+import { Project } from './project.model';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import { InventionListComponent } from './invention-list/invention-list.component';
+import { ProjectListComponent } from './project-list/project-list.component';
 import { NewProjectComponent } from './new-project/new-project.component';
 
 const appRoutes : Routes = [
@@ -17,8 +17,8 @@ const appRoutes : Routes = [
     component: AboutComponent
   },
   {
-    path: 'invention-list',
-    component: InventionListComponent
+    path: 'project-list',
+    component: ProjectListComponent
   },
   {
     path: 'new-project',

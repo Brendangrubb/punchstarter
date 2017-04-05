@@ -1,4 +1,4 @@
-export class Invention {
+export class Project {
   moneyRaised: number = 0;
   backers: any = [];
 
@@ -8,6 +8,7 @@ export class Invention {
     public description: string,
     public rewards: string,
     public moneyGoal: number,
-    public imgurl: string
+    public imgurl: string,
+    public category: string
   ) {}
 }

@@ -10,11 +10,11 @@
       <hr>
       <form>
         <div class="form-group">
-          <select class="form-control" id="dropdown">
-            <option>Invention</option>
-            <option>Cause</option>
-            <option>Personal Project</option>
-            <option>TV/Movies/Media</option>
+          <select #category class="form-control" id="dropdown">
+            <option value="invention">Invention</option>
+            <option value="cause">Cause</option>
+            <option value="personal-project">Personal Project</option>
+            <option value="media">TV/Movies/Media</option>
           </select>
         </div>
         <div class="form-group">
@@ -47,7 +47,8 @@
             description.value,
             rewards.value,
             moneyGoal.value,
-            imgUrl.value);
+            imgUrl.value,
+            category.value);
             projectName.value='';
             creators.value='';
             description.value='';

@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
-import { InventionListComponent } from './invention-list/invention-list.component';
+import { ProjectListComponent } from './project-list/project-list.component';
 import { ContactComponent } from './contact/contact.component';
 import { NewProjectComponent } from './new-project/new-project.component';
 
@@ -27,7 +27,7 @@ export const firebaseConfig = {
     HomeComponent,
     NavbarComponent,
     AboutComponent,
-    InventionListComponent,
+    ProjectListComponent,
     ContactComponent,
     NewProjectComponent
   ],
