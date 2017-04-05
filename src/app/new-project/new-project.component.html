@@ -18,12 +18,12 @@
           </select>
         </div>
         <div class="form-group">
-          <label for="name">Project Name:</label>
+          <label for="project-name">Project Name:</label>
           <input type="text" class="form-control" #projectName>
         </div>
         <div class="form-group">
-          <label for="creator">Creator(s):</label>
-          <input type="text" class="form-control" #creator>
+          <label for="creators">Creator(s):</label>
+          <input type="text" class="form-control" #creators>
         </div>
         <div class="form-group">
           <label for="description">Description:</label>
@@ -35,14 +35,26 @@
         </div>
         <div class="form-group">
           <label for="money-goal">Money Goal:</label>
-          <input type="text" class="form-control" #moneyGoal>
+          <input type="number" class="form-control" #moneyGoal>
         </div>
         <div class="form-group">
           <label for="img-url">Link to image:</label>
           <input type="text" class="form-control" #imgUrl>
         </div>
         <div class="center">
-          <button type="button" class="btn">Start</button>
+          <button type="button" class="btn" (click)="addNewProject(projectName.value,
+            creators.value,
+            description.value,
+            rewards.value,
+            moneyGoal.value,
+            imgUrl.value);
+            projectName.value='';
+            creators.value='';
+            description.value='';
+            rewards.value='';
+            moneyGoal.value='';
+            imgUrl.value=''">Start
+          </button>
         </div>
       </form>
       <hr>

@@ -12,7 +12,12 @@ import { Router } from '@angular/router';
 })
 export class NewProjectComponent implements OnInit {
 
-  constructor() { }
+  addNewProject(projectName: string, creators: string, description: string, rewards: string, moneyGoal: number, imgurl: string) {
+    var newProject: Invention = new Invention(projectName, creators, description, rewards, moneyGoal, imgurl);
+    this.inventionService.saveInvention(newProject);
+  }
+
+  constructor(private inventionService: InventionService) { }
 
   ngOnInit() {
   }

@@ -14,4 +14,7 @@ export class InventionService {
     return this.inventions;
   }
 
+  saveInvention(project: Invention) {
+    this.inventions.push(project);
+  }
 }

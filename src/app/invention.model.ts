@@ -1,5 +1,6 @@
 export class Invention {
   moneyRaised: number = 0;
+  backers: any = [];
 
   constructor(
     public projectName: string,
