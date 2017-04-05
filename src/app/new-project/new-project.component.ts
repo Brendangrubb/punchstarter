@@ -15,9 +15,10 @@ export class NewProjectComponent implements OnInit {
   addNewProject(projectName: string, creators: string, description: string, rewards: string, moneyGoal: number, imgurl: string, category: string) {
     var newProject: Project = new Project(projectName, creators, description, rewards, moneyGoal, imgurl, category);
     this.projectService.saveProject(newProject);
+    this.router.navigate(['project-list']);
   }
 
-  constructor(private projectService: ProjectService) { }
+  constructor(private projectService: ProjectService, private router: Router) { }
 
   ngOnInit() {
   }

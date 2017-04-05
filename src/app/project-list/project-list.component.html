@@ -1,8 +1,12 @@
 <div class="container" id="body">
   <div class="row">
+    <div class="center">
+      <h3>All Projects</h3>
+    </div>
+    <hr>
     <div class="col-sm-4" *ngFor="let project of projects | async">
       <div class="panel panel-default" id="disp-projects">
-        <div class="panel-heading">{{project.projectName}}</div>
+        <div class="panel-heading" (click)="goToProject(project)"><a>{{project.projectName}}</a></div>
         <div class="panel-body">
           <img src="{{project.imgurl}}" alt="{{project.title}}"><br><br>
           <p>{{project.description}}</p>

@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 })
 export class ProjectListComponent implements OnInit {
   projects: FirebaseListObservable<any[]>;
+  projectId: string;
 
   constructor(private projectService: ProjectService, private router: Router) { }
 
@@ -19,4 +20,7 @@ export class ProjectListComponent implements OnInit {
     this.projects = this.projectService.getProjects();
   }
 
+  goToProject(project) {
+    this.router.navigate(['projects/', project.$key]);
+  }
 }
