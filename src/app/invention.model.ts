@@ -6,6 +6,7 @@ export class Invention {
     public creators: string,
     public description: string,
     public rewards: string,
-    public moneyGoal: number
+    public moneyGoal: number,
+    public imgurl: string
   ) {}
 }

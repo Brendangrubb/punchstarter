@@ -5,21 +5,32 @@
       "creators": "Larry David",
       "description": "Well, basically a periscope for your car. So you can see from the top",
       "rewards": "car periscope",
-      "moneyGoal": 5000
+      "moneyGoal": 5000,
+      "imgurl": "http://www2.pictures.zimbio.com/pc/Larry+David+offered+pastry+whilst+driving+QFQTLnB1QwSl.jpg"
     },
     {
       "projectName": "Jump to Conclusions Mat",
       "creators": "Tom Smykowski",
       "description": "A mat with conclusions that you can jump to",
       "rewards": "a jump to conclusions mat",
-      "moneyGoal": 2000
+      "moneyGoal": 2000,
+      "imgurl": "https://i.ytimg.com/vi/Qiw3vVy_eN8/hqdefault.jpg"
     },
     {
       "projectName": "The Bro/Mansierre",
       "creators": "Cosmo Kramer",
       "description": "A bra for males!",
       "rewards": "A bro/mansierre",
-      "moneyGoal": 1000
+      "moneyGoal": 1000,
+      "imgurl": "https://s-media-cache-ak0.pinimg.com/736x/01/97/74/0197749c65186a98489b041b4568c914.jpg"
+    },
+    {
+      "projectName": "Time Machine",
+      "creators": "H.G. Wells",
+      "description": "A device to visit the Eloi and Morlocks.",
+      "rewards": "A time machine",
+      "moneyGoal": 20000000,
+      "imgurl": "http://briff.me/wp-content/uploads/2016/03/napoleon-dynamite-time-machine.jpg"
     }
   ]
 }
