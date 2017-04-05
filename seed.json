@@ -1,0 +1,25 @@
+{
+  "inventions": [
+    {
+      "projectName": "Car Periscope",
+      "creators": "Larry David",
+      "description": "Well, basically a periscope for your car. So you can see from the top",
+      "rewards": "car periscope",
+      "moneyGoal": 5000
+    },
+    {
+      "projectName": "Jump to Conclusions Mat",
+      "creators": "Tom Smykowski",
+      "description": "A mat with conclusions that you can jump to",
+      "rewards": "a jump to conclusions mat",
+      "moneyGoal": 2000
+    },
+    {
+      "projectName": "The Bro/Mansierre",
+      "creators": "Cosmo Kramer",
+      "description": "A bra for males!",
+      "rewards": "A bro/mansierre",
+      "moneyGoal": 1000
+    }
+  ]
+}
