@@ -1,0 +1,15 @@
+<div class="container">
+  <button type="button" (click)="showForm(project)" class="btn btn-primary">Click to back me!</button>
+  <form *ngIf="backerForm">
+    <h2>Fund This Project</h2>
+    <div class="form-group">
+      <label for="backerName">Your Name:</label>
+      <input #backerName class="form-control" type="text" name="backerName">
+    </div>
+    <div class="form-group">
+      <label for="backerAmount">Your Name:</label>
+      <input #backerAmount class="form-control" type="number" name="backerAmount">
+    </div>
+    <button type="button" (click)="fund(project, backerName.value, backerAmount.value)" class="btn btn-primary">Fund This Sucker!</button> <button type="button" (click)="showForm(project)" class="btn btn-primary">Close</button>
+  </form>
+</div>

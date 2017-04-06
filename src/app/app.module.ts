@@ -14,6 +14,7 @@ import { ProjectListComponent } from './project-list/project-list.component';
 import { ContactComponent } from './contact/contact.component';
 import { NewProjectComponent } from './new-project/new-project.component';
 import { IndivProjectComponent } from './indiv-project/indiv-project.component';
+import { BackFormComponent } from './back-form/back-form.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -31,7 +32,8 @@ export const firebaseConfig = {
     ProjectListComponent,
     ContactComponent,
     NewProjectComponent,
-    IndivProjectComponent
+    IndivProjectComponent,
+    BackFormComponent
   ],
   imports: [
     BrowserModule,

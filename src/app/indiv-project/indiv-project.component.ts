@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Project } from '../project.model';
+import { BackFormComponent } from '../back-form/back-form.component';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
 import { ProjectService } from '../project.service';
 import { Router } from '@angular/router';
@@ -33,9 +34,7 @@ export class IndivProjectComponent implements OnInit {
         dataLastEmittedFromObserver.imgurl,
         dataLastEmittedFromObserver.category
       )
-      console.log(this.project);
     })
-
   }
 
 }
