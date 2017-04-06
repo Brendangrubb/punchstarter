@@ -36,5 +36,4 @@ export class IndivProjectComponent implements OnInit {
       )
     })
   }
-
 }

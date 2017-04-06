@@ -2,7 +2,7 @@
   <div class="center">
     <h1>Welcome to {{project?.projectName}}</h1>
     <h3>By: {{project?.creators}}</h3><br>
-    <app-back-form></app-back-form>
+    <app-back-form [project]="project"></app-back-form>
   </div>
 </div>
 <div class="container">
@@ -11,7 +11,7 @@
       <h1>About this project:</h1>
       <h3 class="indent">{{project?.description}}</h3><br>
       <h1>Funding Goal:</h1>
-      <h3 class="indent">${{project?.moneyGoal}}.00</h3><br>
+      <h3 class="indent"><span>${{project?.moneyRaised}}.00</span> / ${{project?.moneyGoal}}.00</h3><br>
       <h1>Rewards:</h1>
       <h3 class="indent">{{project?.rewards}}</h3><br><br>
       <div class="center">

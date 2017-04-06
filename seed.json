@@ -7,7 +7,9 @@
       "rewards": "car periscope",
       "moneyGoal": 5000,
       "imgurl": "http://www2.pictures.zimbio.com/pc/Larry+David+offered+pastry+whilst+driving+QFQTLnB1QwSl.jpg",
-      "category": "invention"
+      "category": "invention",
+      "moneyRaised": 0,
+      "backers": 0
     },
     {
       "projectName": "Jump to Conclusions Mat",
@@ -17,6 +19,9 @@
       "moneyGoal": 2000,
       "imgurl": "https://i.ytimg.com/vi/Qiw3vVy_eN8/hqdefault.jpg",
       "category": "invention"
+      ,
+      "moneyRaised": 0,
+      "backers": 0
     },
     {
       "projectName": "The Bro/Mansierre",
@@ -26,6 +31,9 @@
       "moneyGoal": 1000,
       "imgurl": "https://s-media-cache-ak0.pinimg.com/736x/01/97/74/0197749c65186a98489b041b4568c914.jpg",
       "category": "invention"
+      ,
+      "moneyRaised": 0,
+      "backers": 0
     },
     {
       "projectName": "Time Machine",
@@ -35,6 +43,9 @@
       "moneyGoal": 20000000,
       "imgurl": "http://briff.me/wp-content/uploads/2016/03/napoleon-dynamite-time-machine.jpg",
       "category": "invention"
+      ,
+      "moneyRaised": 0,
+      "backers": 0
     }
   ]
 }
