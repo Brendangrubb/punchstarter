@@ -17,6 +17,13 @@ export class IndivProjectComponent implements OnInit {
   projectId: string = null;
   project;
 
+  delete(){
+    if(confirm("Are you sure you want to delete this item from the inventory?")){
+      this.projectService.deleteProject(this.projectId);
+    }
+    this.router.navigate(['project-list']);
+  }
+
   constructor(private route: ActivatedRoute, private location: Location, private projectService: ProjectService, private router: Router) { }
 
   ngOnInit() {

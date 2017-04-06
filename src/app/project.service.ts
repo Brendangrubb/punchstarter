@@ -23,6 +23,13 @@ export class ProjectService {
     return this.angularFire.database.object('projects/' + projectId);
   }
 
+  deleteProject(projectId) {
+    console.log(projectId);
+    var projectInDatabase = this.getProjectById(projectId);
+    console.log(projectId);
+    projectInDatabase.remove();
+  }
+
   // update(project) {
   //   var thisProject = this.getProjectById(project);
   //   thisProject.update(dataLastEmittedFromObserver => {
