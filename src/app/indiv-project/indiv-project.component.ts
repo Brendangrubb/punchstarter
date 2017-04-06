@@ -13,8 +13,9 @@ import { Location } from '@angular/common';
   providers: [ProjectService]
 })
 export class IndivProjectComponent implements OnInit {
-  projects: FirebaseListObservable<any[]>;
+  projects;
   projectId: string;
+  project;
 
   constructor(private route: ActivatedRoute, private location: Location, private projectService: ProjectService, private router: Router) { }
 
@@ -22,6 +23,18 @@ export class IndivProjectComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.projectId = (urlParameters['id']);
     });
+
+    this.projectService.getProjectById(this.projectId).subscribe(dataLastEmittedFromObserver => {
+      this.project = new Project(
+        dataLastEmittedFromObserver.projectName,
+        dataLastEmittedFromObserver.creators,
+        dataLastEmittedFromObserver.description,
+        dataLastEmittedFromObserver.rewards,
+        dataLastEmittedFromObserver.moneyGoal,
+        dataLastEmittedFromObserver.imgurl,
+        dataLastEmittedFromObserver.category
+      )
+    })
   }
 
 }
