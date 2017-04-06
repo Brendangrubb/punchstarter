@@ -3,6 +3,7 @@
     <h1>Welcome to {{project?.projectName}}</h1>
     <h3>By: {{project?.creators}}</h3><br>
     <button (click)="delete()" class="btn">Delete</button>
+    <app-edit-project [project]="project"></app-edit-project>
     <app-back-form [project]="project"></app-back-form>
   </div>
 </div>

@@ -6,9 +6,10 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectListComponent } from './project-list/project-list.component';
 import { NewProjectComponent } from './new-project/new-project.component';
+import { EditProjectComponent } from './edit-project/edit-project.component';
 import { IndivProjectComponent } from './indiv-project/indiv-project.component';
 
-const appRoutes : Routes = [
+const appRoutes: Routes = [
   {
     path: '',
     component: HomeComponent
@@ -28,6 +29,10 @@ const appRoutes : Routes = [
   {
     path: 'projects/:id',
     component: IndivProjectComponent
+  },
+  {
+    path: 'edit-project',
+    component: EditProjectComponent
   }
 ];
 

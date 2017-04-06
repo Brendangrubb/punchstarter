@@ -1,0 +1,66 @@
+<img src="../../assets/adam.jpg" alt="Fists of fury">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+    </div>
+    <div class="col-sm-6">
+      <div class="center">
+        <h3><strong>Start a Project</strong></h3>
+      </div>
+      <hr>
+      <form>
+        <div class="form-group">
+          <select #category class="form-control" id="dropdown">
+            <option value="invention">Invention</option>
+            <option value="cause">Cause</option>
+            <option value="personal-project">Personal Project</option>
+            <option value="media">TV/Movies/Media</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="project-name">Project Name:</label>
+          <input type="text" class="form-control" #projectName>
+        </div>
+        <div class="form-group">
+          <label for="creators">Creator(s):</label>
+          <input type="text" class="form-control" #creators>
+        </div>
+        <div class="form-group">
+          <label for="description">Description:</label>
+          <textarea class="form-control" rows="4" #description></textarea>
+        </div>
+        <div class="form-group">
+          <label for="rewards">Rewards:</label>
+          <input type="text" class="form-control" #rewards>
+        </div>
+        <div class="form-group">
+          <label for="money-goal">Money Goal:</label>
+          <input type="number" class="form-control" #moneyGoal>
+        </div>
+        <div class="form-group">
+          <label for="img-url">Link to image:</label>
+          <input type="text" class="form-control" #imgUrl>
+        </div>
+        <div class="center">
+          <button type="button" class="btn" (click)="updateAlbum(projectName.value,
+            creators.value,
+            description.value,
+            rewards.value,
+            moneyGoal.value,
+            imgUrl.value,
+            category.value);
+            projectName.value='';
+            creators.value='';
+            description.value='';
+            rewards.value='';
+            moneyGoal.value='';
+            imgUrl.value=''">Start
+          </button>
+          <button (click)="projectLog()">check dat log</button>
+        </div>
+      </form>
+      <hr>
+    </div>
+    <div class="col-sm-3">
+    </div>
+  </div>

@@ -24,16 +24,14 @@ export class ProjectService {
   }
 
   deleteProject(projectId) {
-    console.log(projectId);
     var projectInDatabase = this.getProjectById(projectId);
-    console.log(projectId);
     projectInDatabase.remove();
   }
 
-  // update(project) {
-  //   var thisProject = this.getProjectById(project);
+  // update(projectId) {
+  //   var thisProject = this.getProjectById(projectId);
   //   thisProject.update(dataLastEmittedFromObserver => {
-  //   project = new Project(
+  //   newProject = new Project(
   //       projectName: project.projectName,
   //       creators: project.creators,
   //       description: project.description,
