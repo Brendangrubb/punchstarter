@@ -3,6 +3,11 @@ input[type=text]:focus {
   border: 1px solid #fc6;
 }
 
+input[type=number]:focus {
+  box-shadow: 0 0 5px #fc6;
+  border: 1px solid #fc6;
+}
+
 textarea:focus {
   box-shadow: 0 0 5px #fc6;
   border: 1px solid #fc6;

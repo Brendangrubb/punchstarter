@@ -21,6 +21,6 @@ export class ProjectListComponent implements OnInit {
   }
 
   goToProject(project) {
-    this.router.navigate(['projects/', project.$key]);
+    this.router.navigate(['projects', project.$key]);
   }
 }

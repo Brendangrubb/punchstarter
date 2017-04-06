@@ -13,8 +13,7 @@ import { Location } from '@angular/common';
   providers: [ProjectService]
 })
 export class IndivProjectComponent implements OnInit {
-  projects;
-  projectId: string;
+  projectId: string = null;
   project;
 
   constructor(private route: ActivatedRoute, private location: Location, private projectService: ProjectService, private router: Router) { }
@@ -34,7 +33,9 @@ export class IndivProjectComponent implements OnInit {
         dataLastEmittedFromObserver.imgurl,
         dataLastEmittedFromObserver.category
       )
+      console.log(this.project);
     })
+
   }
 
 }
